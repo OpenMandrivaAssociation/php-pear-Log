@@ -2,7 +2,7 @@
 %define		upstream_name	%{_class}
 
 Name:		php-pear-%{upstream_name}
-Version:	1.11.6
+Version:	1.12.0
 Release:	%mkrel 1
 Summary:	Logging Framework
 License:	PHP License
