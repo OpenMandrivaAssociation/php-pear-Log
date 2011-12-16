@@ -3,7 +3,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	1.12.7
-Release:	%mkrel 2
+Release:	%mkrel 3
 Summary:	Logging Framework
 License:	PHP License
 Group:		Development/PHP
@@ -53,7 +53,7 @@ pear install --nodeps --soft --force --register-only \
 %if %mdkversion < 201000
 if [ "$1" -eq "0" ]; then
     pear uninstall --nodeps --ignore-errors --register-only \
-        %{pear_name} >/dev/null || :
+        %{upstream_name} >/dev/null || :
 fi
 %endif
 
