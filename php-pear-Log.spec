@@ -3,7 +3,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	1.12.7
-Release:	%mkrel 3
+Release:	4
 Summary:	Logging Framework
 License:	PHP License
 Group:		Development/PHP
@@ -16,7 +16,6 @@ BuildRequires:	php-pear
 BuildArch:	noarch
 # because it was broken out and the one doing it was pretty careless...
 Conflicts:	php-pear < 1:1.9
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 The Log package provides an abstracted logging framework. It includes output
@@ -28,7 +27,6 @@ also provides composite and subject-observer logging mechanisms.
 mv package.xml %{upstream_name}-%{version}/%{upstream_name}.xml
 
 %install
-rm -rf %{buildroot}
 
 cd %{upstream_name}-%{version}
 pear install --nodeps --packagingroot %{buildroot} %{upstream_name}.xml
@@ -41,7 +39,6 @@ install -d %{buildroot}%{_datadir}/pear/packages
 install -m 644 %{upstream_name}.xml %{buildroot}%{_datadir}/pear/packages
 
 %clean
-rm -rf %{buildroot}
 
 
 
