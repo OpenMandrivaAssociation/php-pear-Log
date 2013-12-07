@@ -4,7 +4,7 @@
 Summary:	Logging Framework
 Name:		php-pear-%{modname}
 Version:	1.12.7
-Release:	5
+Release:	6
 License:	PHP License
 Group:		Development/PHP
 Url:		http://pear.php.net/package/%{modname}
