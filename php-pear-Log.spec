@@ -3,12 +3,12 @@
 
 Summary:	Logging Framework
 Name:		php-pear-%{modname}
-Version:	1.12.7
-Release:	10
+Version:	1.12.8
+Release:	1
 License:	PHP License
 Group:		Development/PHP
 Url:		http://pear.php.net/package/%{modname}
-Source0:	http://download.pear.php.net/package/%{modname}-%{version}.tgz
+Source0:	http://download.pear.php.net/package/Log-%{version}.tgz
 BuildArch:	noarch
 BuildRequires:	php-pear
 Requires(post,preun):	php-pear
@@ -42,4 +42,3 @@ install -m 644 %{modname}.xml %{buildroot}%{_datadir}/pear/packages
 %{_datadir}/pear/%{_class}.php
 %{_datadir}/pear/data/%{modname}
 %{_datadir}/pear/packages/%{modname}.xml
-
