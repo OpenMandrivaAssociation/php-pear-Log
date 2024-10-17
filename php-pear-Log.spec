@@ -7,7 +7,7 @@ Version:	1.12.8
 Release:	4
 License:	PHP License
 Group:		Development/PHP
-Url:		http://pear.php.net/package/%{modname}
+Url:		https://pear.php.net/package/%{modname}
 Source0:	http://download.pear.php.net/package/Log-%{version}.tgz
 BuildArch:	noarch
 BuildRequires:	php-pear
